@@ -1,0 +1,22 @@
+{
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000I\u0000M\u0000D\u0000B\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zetsuga/IMDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zetsuga/IMDB/issues"
+  },
+  "homepage": "https://github.com/Zetsuga/IMDB#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.10"
+  }
+}
