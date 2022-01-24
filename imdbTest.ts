@@ -63,4 +63,7 @@ let imdb:Imdb = new Imdb(peliculas);
 
 console.log(imdb);
 
+let fs = require('fs');
+fs.writeFileSync("imdbBBDD.json",JSON.stringify(imdb));
+
 
