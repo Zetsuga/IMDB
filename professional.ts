@@ -31,7 +31,18 @@ class Professional
 
     toString()
     {
-        return this.name, this.age, this.genre, this.weight, this.height, this.hairColor, this.eyeColor, this.race, this.isRetired, this.nationality, this.oscarsNumber, this.profession
+        return "Nombre: "+ this.name + "\n" +
+                "Edad: " + this.age + "\n" +
+                "Genero: " + this.genre + "\n" +
+                "Peso:" + this.weight + "\n" +
+                "Altura:" + this.height + "\n`"+
+                "Color de pelo: " + this.hairColor + "\n" +
+                "Color de ojos: " + this.eyeColor + "\n" +
+                "Raza: " + this.race + "\n" +
+                "¿Está retirado?: " + this.isRetired + "\n" +
+                "Nacionalidad: " + this.nationality + "\n" +
+                "Número de Oscars: " + this.oscarsNumber + "\n" +
+                "Profesión: " + this.profession + "\n" 
     }
 }
 
