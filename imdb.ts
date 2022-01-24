@@ -3,19 +3,19 @@ import { Professional } from "./professional";
 
 export class Imdb{
     
+    public fs = require('fs');
     public peliculas:Movie[];
     
     public constructor(peliculas:Movie[]){
         this.peliculas = peliculas;
     }
     public escribirEnFicheroJson(archivo:string):void{
-        let fs = require('fs');
-        fs.writeFileSync(archivo,JSON.stringify(this.peliculas));
+        this.fs.writeFileSync(archivo,JSON.stringify(this.peliculas));
     }
     
     public obtenerInstanciaIMDB(archivo:string):Imdb{
-        let fs = require('fs');
-        let rawdata = fs.readFileSync("imdbBBDD.json", 'utf8');
+        
+        let rawdata = this.fs.readFileSync(archivo, 'utf8');
         let tempIMDB = JSON.parse(rawdata);
     
         let actor:Professional;
