@@ -1,20 +1,20 @@
-import {Professionals} from "./professionals";
+import {Professional} from "./professional";
 
 export class Movie{
 
-    private title:string;
-    private releaseYear:number;
-    private actors:Professionals[];
-    private nacionality:string;
-    private director: string;
-    private writer:string;
-    private language:string;
-    private plataform:string;
-    private isMCU:boolean;
-    private mainCharacterName:string;
-    private producer:string;
-    private distributor:string;
-    private genre:string;
+    public title:string;
+    public releaseYear:number;
+    public actors:Professional[];
+    public nacionality:string;
+    public director: string;
+    public writer:string;
+    public language:string;
+    public plataform:string;
+    public isMCU:boolean;
+    public mainCharacterName:string;
+    public producer:string;
+    public distributor:string;
+    public genre:string;
 
     public constructor(title:string,releaseYear:number,nacionality:string,genre:string){
         this.title = title;
@@ -37,7 +37,7 @@ export class Movie{
         `Idioma: ${this.language}\n` +
         `Plataforma: ${this.plataform}\n` +
         `¿Es MCU?: ${this.isMCU}\n` +
-        `Persoaje principal: ${this.mainCharacterName}\n` +
+        `Personaje principal: ${this.mainCharacterName}\n` +
         `Productor: ${this.producer}\n` +
         `Distribuidor: ${this.distributor}\n` +
         `Genero: ${this.genre}\n`;
